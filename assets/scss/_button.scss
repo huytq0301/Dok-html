@@ -1,0 +1,101 @@
+/** ------------------------------------------------------------------------------------------------
+* BUTTONS
+* ------------------------------------------------------------------------------------------------ */
+.btn,
+.button,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    &.button-default {
+        &.small-button {
+            @include button-size-small;
+        }
+
+        &.medium-button {
+            @include button-size-medium;
+        }
+
+        &.large-button {
+            @include button-size-large;
+        }
+
+        display         : inline-block;
+        text-align      : center;
+        text-transform  : uppercase;
+        outline         : 0;
+        border          : none;
+        vertical-align  : middle;
+        cursor          : pointer;
+        background-color: $primary-color;
+        color           : white;
+        border-radius   : 0;
+        @include transition(all 0.3s);
+
+        &:hover,
+        &:focus {
+            outline         : 0;
+            color           : white;
+            background-color: $active-color;
+        }
+
+        &.button-solid {
+
+            &:hover,
+            &:focus {
+                background-color: $primary-color;
+            }
+        }
+
+        &[disabled] {
+            background-color: $disabled-color;
+        }
+    }
+
+    &.button-out-line {
+        &.small-button {
+            @include button-size-small;
+        }
+
+        &.medium-button {
+            @include button-size-medium;
+        }
+
+        &.large-button {
+            @include button-size-large;
+        }
+
+        display        : inline-block;
+        text-align     : center;
+        text-transform : uppercase;
+        outline        : 0;
+        border         : none;
+        vertical-align : middle;
+        cursor         : pointer;
+        border-radius  : 4px;
+        @include transition(all 0.3s);
+
+        &.black {
+            border          : 2px solid $primary-color;
+            color           : $primary-color;
+            background-color: white;
+        }
+
+        &.white {
+            border          : 2px solid white;
+            color           : white;
+            background-color: transparent;
+        }
+
+        &:hover,
+        &:focus {
+            outline     : 0;
+            border-color: $active-color;
+        }
+
+        &[disabled] {
+            color       : $disabled-color;
+            border-color: $disabled-color;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition   : $transition;
+    -o-transition     : $transition;
+    transition        : $transition;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform   : $transform;
+    -o-transform     : $transform;
+    transform        : $transform;
+}
+
+@mixin appearance($appearance) {
+    -webkit-appearance: $appearance;
+    -moz-appearance   : $appearance;
+    -o-appearance     : $appearance;
+    appearance        : $appearance;
+}
+
+
+@mixin button-size-small {
+    font-size: 11px;
+    padding  : 12.5px 25px;
+
+    font-family   : $third-font;
+    letter-spacing: 0.02px;
+}
+
+@mixin button-size-medium {
+    font-size     : 11px;
+    padding       : 14.5px 25px;
+    font-family   : $third-font;
+    letter-spacing: 0.02px;
+}
+
+@mixin button-size-large {
+    font-size     : 11px;
+    padding       : 16.5px 25px;
+    font-family   : $third-font;
+    letter-spacing: 0.02px;
+}
