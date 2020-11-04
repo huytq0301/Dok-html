@@ -1,0 +1,310 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../fonts/Proxima_Nova_Regular.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: SVN Monument Extended UltraLight;
+  src: url(../fonts/SVN_Monument_Extended_UltraLight.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: SVN Monument Extended Light;
+  src: url(../fonts/SVN_Monument_Extended_Light.otf);
+  font-weight: normal;
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  color: #212121;
+  line-height: 1.4;
+  letter-spacing: 0.02px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  color: #212121;
+}
+a:hover {
+  text-decoration: none;
+  color: #FF3333;
+}
+
+.header-wrapper {
+  background-color: #000000;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10.5px 0;
+}
+.header-wrapper img {
+  margin-right: 5px;
+}
+
+/* left sidebar */
+.left-sidebar {
+  min-width: 220px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #707070;
+}
+
+.left-sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px;
+}
+
+.page-content {
+  padding-left: 220px;
+}
+
+/* ======= */
+/* main menu */
+.main-menu > li {
+  padding: 6px 0;
+  display: flex;
+}
+
+/* ====== */
+/* ==========================================================================
+   HEADING
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SVN Monument Extended UltraLight";
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+/** ------------------------------------------------------------------------------------------------
+* BUTTONS
+* ------------------------------------------------------------------------------------------------ */
+.btn.button-default,
+.button.button-default,
+button.button-default,
+input[type=submit].button-default,
+input[type=button].button-default,
+input[type=reset].button-default {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 0;
+  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+.btn.button-default.small-button,
+.button.button-default.small-button,
+button.button-default.small-button,
+input[type=submit].button-default.small-button,
+input[type=button].button-default.small-button,
+input[type=reset].button-default.small-button {
+  font-size: 11px;
+  padding: 12.5px 25px;
+  font-family: "SVN Monument Extended Light";
+  letter-spacing: 0.02px;
+}
+.btn.button-default.medium-button,
+.button.button-default.medium-button,
+button.button-default.medium-button,
+input[type=submit].button-default.medium-button,
+input[type=button].button-default.medium-button,
+input[type=reset].button-default.medium-button {
+  font-size: 11px;
+  padding: 14.5px 25px;
+  font-family: "SVN Monument Extended Light";
+  letter-spacing: 0.02px;
+}
+.btn.button-default.large-button,
+.button.button-default.large-button,
+button.button-default.large-button,
+input[type=submit].button-default.large-button,
+input[type=button].button-default.large-button,
+input[type=reset].button-default.large-button {
+  font-size: 11px;
+  padding: 16.5px 25px;
+  font-family: "SVN Monument Extended Light";
+  letter-spacing: 0.02px;
+}
+.btn.button-default:hover, .btn.button-default:focus,
+.button.button-default:hover,
+.button.button-default:focus,
+button.button-default:hover,
+button.button-default:focus,
+input[type=submit].button-default:hover,
+input[type=submit].button-default:focus,
+input[type=button].button-default:hover,
+input[type=button].button-default:focus,
+input[type=reset].button-default:hover,
+input[type=reset].button-default:focus {
+  outline: 0;
+  color: white;
+  background-color: #FF3333;
+}
+.btn.button-default.button-solid:hover, .btn.button-default.button-solid:focus,
+.button.button-default.button-solid:hover,
+.button.button-default.button-solid:focus,
+button.button-default.button-solid:hover,
+button.button-default.button-solid:focus,
+input[type=submit].button-default.button-solid:hover,
+input[type=submit].button-default.button-solid:focus,
+input[type=button].button-default.button-solid:hover,
+input[type=button].button-default.button-solid:focus,
+input[type=reset].button-default.button-solid:hover,
+input[type=reset].button-default.button-solid:focus {
+  background-color: #000000;
+}
+.btn.button-default[disabled],
+.button.button-default[disabled],
+button.button-default[disabled],
+input[type=submit].button-default[disabled],
+input[type=button].button-default[disabled],
+input[type=reset].button-default[disabled] {
+  background-color: #A3A3A3;
+}
+.btn.button-out-line,
+.button.button-out-line,
+button.button-out-line,
+input[type=submit].button-out-line,
+input[type=button].button-out-line,
+input[type=reset].button-out-line {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 0;
+  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.btn.button-out-line.small-button,
+.button.button-out-line.small-button,
+button.button-out-line.small-button,
+input[type=submit].button-out-line.small-button,
+input[type=button].button-out-line.small-button,
+input[type=reset].button-out-line.small-button {
+  font-size: 11px;
+  padding: 12.5px 25px;
+  font-family: "SVN Monument Extended Light";
+  letter-spacing: 0.02px;
+}
+.btn.button-out-line.medium-button,
+.button.button-out-line.medium-button,
+button.button-out-line.medium-button,
+input[type=submit].button-out-line.medium-button,
+input[type=button].button-out-line.medium-button,
+input[type=reset].button-out-line.medium-button {
+  font-size: 11px;
+  padding: 14.5px 25px;
+  font-family: "SVN Monument Extended Light";
+  letter-spacing: 0.02px;
+}
+.btn.button-out-line.large-button,
+.button.button-out-line.large-button,
+button.button-out-line.large-button,
+input[type=submit].button-out-line.large-button,
+input[type=button].button-out-line.large-button,
+input[type=reset].button-out-line.large-button {
+  font-size: 11px;
+  padding: 16.5px 25px;
+  font-family: "SVN Monument Extended Light";
+  letter-spacing: 0.02px;
+}
+.btn.button-out-line.black,
+.button.button-out-line.black,
+button.button-out-line.black,
+input[type=submit].button-out-line.black,
+input[type=button].button-out-line.black,
+input[type=reset].button-out-line.black {
+  border: 2px solid #000000;
+  color: #000000;
+  background-color: white;
+}
+.btn.button-out-line.white,
+.button.button-out-line.white,
+button.button-out-line.white,
+input[type=submit].button-out-line.white,
+input[type=button].button-out-line.white,
+input[type=reset].button-out-line.white {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+.btn.button-out-line:hover, .btn.button-out-line:focus,
+.button.button-out-line:hover,
+.button.button-out-line:focus,
+button.button-out-line:hover,
+button.button-out-line:focus,
+input[type=submit].button-out-line:hover,
+input[type=submit].button-out-line:focus,
+input[type=button].button-out-line:hover,
+input[type=button].button-out-line:focus,
+input[type=reset].button-out-line:hover,
+input[type=reset].button-out-line:focus {
+  outline: 0;
+  border-color: #FF3333;
+}
+.btn.button-out-line[disabled],
+.button.button-out-line[disabled],
+button.button-out-line[disabled],
+input[type=submit].button-out-line[disabled],
+input[type=button].button-out-line[disabled],
+input[type=reset].button-out-line[disabled] {
+  color: #A3A3A3;
+  border-color: #A3A3A3;
+}
